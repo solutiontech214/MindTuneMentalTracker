@@ -91,6 +91,8 @@ export const savedMusic = pgTable("saved_music", {
 export const insertMoodEntrySchema = createInsertSchema(moodEntries).omit({
   id: true,
   createdAt: true,
+}).extend({
+  moodScore: z.number().min(1).max(5).optional(),
 });
 
 export const insertActivityCompletionSchema = createInsertSchema(activityCompletions).omit({
