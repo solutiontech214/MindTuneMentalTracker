@@ -83,7 +83,7 @@
   }
   
   .mood-emoji.selected {
-    @apply scale-120 ring-4 ring-primary/30;
+    @apply scale-125 ring-4 ring-primary ring-opacity-30;
   }
   
   .therapy-card {
